@@ -6,60 +6,102 @@
 body{
     background-color:#0D0D0D;
     color:white ;
+    font-family: Arial, sans-serif;
 }
 .containor{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 120px auto 0 auto;
+    margin: 100px auto;
     max-width: 500px;
 
 }
 .stats-containor{
-    padding: 10px;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 10px;
     border: 2px solid #514D47;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
     width: 100%;
 
 }
 #numbers{
-    width: 100px;
-    height:100px;
+    width: 80px;
+    height:80px;
     display: flex;
     background-color: #88AB33;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold; 
+    color: white;
 }
 form{
-    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 60px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 input {
-    width: 100%;
+    width: 80%;
     padding: 16px;
     background-color: #1F2935;
-    border: 1px solid;
+    border: none ;
     border-radius:10px ;
+    color: white;
 }
 button{
     width: 50px;
     height: 50px;
-    border-radius:5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: none;
+    border-radius:10px;
     background: #88AB33;
     color: white;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    border: 2px solid #514D47;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #88AB33;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.task-item p {
+    flex-grow: 1;
+    text-align: left;
+    color: white;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    color: #88AB33;
+    cursor: pointer;
+    font-size: 20px;
 }
